@@ -6,7 +6,7 @@ function convertSeconds(s) {
    return nf(min,2)+":"+nf(sec,2);
 }
 
-function draw() {
+function setup() {
    function timeIt() {
      counter++
      
