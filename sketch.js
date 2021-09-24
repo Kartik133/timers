@@ -7,7 +7,7 @@ function convertSeconds(s) {
 }
 
 function draw() {
-   createCanvas(400,400);
+   noCanvas();
    
    function timeIt() {
      counter++
