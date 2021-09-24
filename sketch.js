@@ -6,12 +6,11 @@ function convertSeconds(s) {
    return nf(min,2)+":"+nf(sec,2);
 }
 
-function draw() {
+function setup() {
    noCanvas();
    
    function timeIt() {
      counter++
-     textAlign(CENTER);
      t = createElement("h1");
      t.position(200,200);
      t.html(convertSeconds(timeLeft-counter),200,200);
