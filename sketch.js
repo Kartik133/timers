@@ -10,7 +10,8 @@ function setup() {
    function timeIt() {
      counter++
      
-   
+     var timer = select("#timer");
+     timer.html(convertSeconds(timeLeft-counter));
      camera.y = y;
    }
    setInterval(timeIt,1000);
