@@ -6,7 +6,7 @@ function convertSeconds(s) {
    return nf(min,2)+":"+(sec,2);
 }
 
-function setup() {
+function draw() {
    createCanvas(400,400);
    
    textAlign(CENTER);
