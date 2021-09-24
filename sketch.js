@@ -9,20 +9,11 @@ function convertSeconds(s) {
 
 function setup() {
    
-   
-   y = createInput("seconds");
-   y.position(200,200);
-   
-   setInterval(timeIt,1000);
-}
-
-function draw() {
-   if(y.value) {
-    function timeIt() {
+   function timeIt() {
      counter++;
      var timer = select("#timer");
      timer.html(convertSeconds(timeLeft-counter));
-    }
    }
-   var v = y.value();
+   
+   setInterval(timeIt,1000);
 }
