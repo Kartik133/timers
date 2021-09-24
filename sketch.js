@@ -13,7 +13,7 @@ function setup() {
      counter++
      t = createElement("h1");
      t.position(200,200);
-     t.html(convertSeconds(timeLeft-counter),200,200);
+     t.html(convertSeconds(timeLeft-counter));
    }
    setInterval(timeIt,1000);
 }
