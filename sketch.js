@@ -12,14 +12,16 @@ function setup() {
    
    function timeIt() {
      counter++
-     t = createElement("h1");
-     t.position(200,y);
-     t.html(convertSeconds(timeLeft-counter));
-     y+=50;
+     
    }
    setInterval(timeIt,1000);
 }
 
 function draw() {
+   t = createElement("h1");
+   t.position(200,y);
+   t.html(convertSeconds(timeLeft-counter));
+   y+=50;
    
+   camera.y = y;
 }
