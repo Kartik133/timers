@@ -8,13 +8,7 @@ function convertSeconds(s) {
 }
 
 function setup() {
-   if(y.value) {
-    function timeIt() {
-     counter++;
-     var timer = select("#timer");
-     timer.html(convertSeconds(timeLeft-counter));
-    }
-   }
+   
    
    y = createInput("seconds");
    y.position(200,200);
@@ -23,5 +17,12 @@ function setup() {
 }
 
 function draw() {
+   if(y.value) {
+    function timeIt() {
+     counter++;
+     var timer = select("#timer");
+     timer.html(convertSeconds(timeLeft-counter));
+    }
+   }
    var v = y.value();
 }
