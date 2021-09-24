@@ -1,4 +1,5 @@
-var counter = 0,timeLeft = 60,t;
+var counter = 0,timeLeft = 110,t;
+var y = 200;
 
 function convertSeconds(s) {
    var min = floor(s/60);
@@ -12,8 +13,9 @@ function setup() {
    function timeIt() {
      counter++
      t = createElement("h1");
-     t.position(200,200);
+     t.position(200,y);
      t.html(convertSeconds(timeLeft-counter));
+     y+=50;
    }
    setInterval(timeIt,1000);
 }
