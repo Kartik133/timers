@@ -7,7 +7,7 @@ function convertSeconds(s) {
    return nf(min,2)+":"+nf(sec,2);
 }
 function timeIt() {
-   if(timeLeft!=="s")
+   if(timeLeft!=="s") {
     counter++;
     var timer = select("#timer");
     timer.html(convertSeconds(timeLeft-counter));
