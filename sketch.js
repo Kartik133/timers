@@ -27,7 +27,6 @@ function draw() {
       x.hide();
       y.hide();
       
-      //timeLeft = int(y.value);
+      timeLeft = int(y.value());
    });
-   console.log(int(y.value));
 }
