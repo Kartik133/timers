@@ -26,8 +26,8 @@ function draw() {
    x.mousePressed(()=>{
       x.hide();
       y.hide();
-      console.log(int(y.value));
+      
       //timeLeft = int(y.value);
    });
-   
+   console.log(int(y.value));
 }
