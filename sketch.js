@@ -1,5 +1,9 @@
 var counter = 0,timeLeft = "s";
-var y,x,interval;
+var y,x,interval,radar;
+
+function preload() {
+   radar = loadSound("Radar.mp3");
+}
 
 function convertSeconds(s) {
    var min = floor(s/60);
@@ -15,6 +19,7 @@ function timeIt() {
    
    if(counter===timeLeft) {
       clearInterval(interval);
+      radar.play();
    }
 }
 function setup() {
