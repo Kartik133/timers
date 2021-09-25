@@ -1,5 +1,5 @@
 var counter = 0,timeLeft = "s";
-var y,x;
+var y,x,interval;
 
 function convertSeconds(s) {
    var min = floor(s/60);
@@ -12,6 +12,10 @@ function timeIt() {
     var timer = select("#timer");
     timer.html(convertSeconds(timeLeft-counter));
    }
+   
+   if(counter===timeLeft) {
+      clearInterval(interval);
+   }
 }
 function setup() {
    y = createInput("seconds");
@@ -19,7 +23,7 @@ function setup() {
    y.position(200,200);
    x.position(200,130);
    
-   setInterval(timeIt,1000);
+   interval = setInterval(timeIt,1000);
 }
 
 function draw() {
