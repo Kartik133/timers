@@ -28,5 +28,5 @@ function draw() {
       x.hide();
       y.hide();
    });
-   
+   console.log(timeLeft);
 }
