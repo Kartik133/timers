@@ -28,7 +28,7 @@ function setup() {
    if(timeLeft==="s") {
       textSize(50);
       fill(0);
-      text("Seconds",width/2-100,height/2-40);
+      text("Seconds",width/2-100,height/2-100);
    }
    
    y = createInput("");
