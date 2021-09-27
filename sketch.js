@@ -24,7 +24,13 @@ function timeIt() {
 }
 function setup() {
    createCanvas(windowWidth,windowHeight);
-   y = createInput("seconds");
+   
+   if(timeLeft==="s") {
+      textSize(50);
+      text("Seconds",width/2-100,height/2-10);
+   }
+   
+   y = createInput("");
    x = createButton("DONE");
    y.position(width/2-100,height/2);
    x.position(width/2-50,height/2+100);
