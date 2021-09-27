@@ -27,10 +27,10 @@ function setup() {
    y = createInput("seconds");
    x = createButton("DONE");
    y.position(width/2-100,height/2);
-   x.position(width/2-50,height/2+200);
+   x.position(width/2-50,height/2+100);
    y.style("height","30px");
    x.style("width","50px");
-   x.style("height","60px");
+   x.style("height","40px");
    interval = setInterval(timeIt,1000);
 }
 
