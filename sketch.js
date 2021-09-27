@@ -23,6 +23,7 @@ function timeIt() {
    }
 }
 function setup() {
+   createCanvas(windowWidth,windowHeight);
    y = createInput("seconds");
    x = createButton("DONE");
    y.position(200,200);
