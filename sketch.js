@@ -16,6 +16,7 @@ function timeIt() {
     var timer = select("#timer");
     timer.html(convertSeconds(timeLeft-counter));
     v = createSprite(width/2,height/2,500,500);
+    v.shapeColor = rgb(255,255,255);
    }
    
    if(counter===timeLeft) {
