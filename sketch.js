@@ -26,9 +26,11 @@ function setup() {
    createCanvas(windowWidth,windowHeight);
    y = createInput("seconds");
    x = createButton("DONE");
-   y.position(200,200);
-   x.position(200,130);
-   
+   y.position(width/2-100,height/2);
+   x.position(width/2-50,height/2+200);
+   y.style("height","30px");
+   x.style("width","50px");
+   x.style("height","60px");
    interval = setInterval(timeIt,1000);
 }
 
