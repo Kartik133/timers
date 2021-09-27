@@ -1,5 +1,5 @@
 var counter = 0,timeLeft = "s";
-var y,x,interval,radar;
+var y,x,interval,radar,v;
 
 function preload() {
    radar = loadSound("Radar.mp3");
@@ -15,6 +15,7 @@ function timeIt() {
     counter++;
     var timer = select("#timer");
     timer.html(convertSeconds(timeLeft-counter));
+    v = createSprite(width/2,height/2,500,500);
    }
    
    if(counter===timeLeft) {
@@ -24,8 +25,6 @@ function timeIt() {
 }
 function setup() {
    createCanvas(windowWidth,windowHeight);
-   
-   
    
    y = createInput("");
    x = createButton("DONE");
@@ -50,4 +49,6 @@ function draw() {
       
       timeLeft = int(y.value());
    });
+   
+   drawSprites();
 }
