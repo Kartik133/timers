@@ -25,11 +25,7 @@ function timeIt() {
 function setup() {
    createCanvas(windowWidth,windowHeight);
    
-   if(timeLeft==="s") {
-      textSize(50);
-      fill(0);
-      text("Seconds",width/2-100,height/2-60);
-   }
+   
    
    y = createInput("");
    x = createButton("DONE");
@@ -42,6 +38,12 @@ function setup() {
 }
 
 function draw() {
+   if(timeLeft==="s") {
+      textSize(50);
+      fill(0);
+      text("Seconds",width/2-100,height/2-60);
+   }
+   
    x.mousePressed(()=>{
       x.hide();
       y.hide();
